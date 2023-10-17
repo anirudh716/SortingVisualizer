@@ -66,4 +66,9 @@ label{
     color: #333;
   }
   
-
+  .bar {
+    width: 10px;
+    background-color: steelblue;
+    margin: 0 2px;
+    display: inline-block;
+}
