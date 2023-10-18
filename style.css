@@ -17,7 +17,7 @@ body{
     text-align: center;
 }
 
-#new-btn{
+.btn{
     margin: 10px;
     width: 100px;
     height: 40px;
@@ -31,12 +31,12 @@ body{
     transition: transform 0.3s ease;
 }
 
-#new-btn:hover{
+.btn:hover{
     background-color:#545456 ;
     border-color: #fff;
     transform: scale(1.1);
 }
-s
+
 label{
     font-weight: bold;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
@@ -65,10 +65,16 @@ label{
     background-color: #fff;
     color: #333;
   }
+
+#bars-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
   
-  .bar {
-    width: 10px;
-    background-color: steelblue;
-    margin: 0 2px;
-    display: inline-block;
+.bar {
+    width: 15px;
+    background-color: #e1ad01;
+    margin: 2px;
 }
