@@ -10,7 +10,7 @@ function bubbleSortVisualization() {
                 bars[i + 1].style.background = 'red';
 
                 if (parseInt(bars[i].style.height) > parseInt(bars[i + 1].style.height)) {
-                    await sleep(10);
+                    await sleep(100);
                     swap(bars[i], bars[i + 1]);
                     swapped = true;
                 }
@@ -25,7 +25,7 @@ function bubbleSortVisualization() {
         }
         for (var i = 0; i < n; i++) {
             if(window.getComputedStyle(bars[i]).backgroundColor != 'green')
-            bars[i].style.background = 'green';
+                bars[i].style.background = 'green';
         }
     }
 
@@ -47,4 +47,4 @@ function bubbleSortVisualization() {
     });
 }
 
-window.onload = bubbleSortVisualization;
+window.addEventListener('load', bubbleSortVisualization);
