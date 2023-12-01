@@ -10,7 +10,7 @@ function bubbleSortVisualization() {
                 bars[i + 1].style.background = 'red';
 
                 if (parseInt(bars[i].style.height) > parseInt(bars[i + 1].style.height)) {
-                    await sleep(100);
+                    await sleep(50);
                     swap(bars[i], bars[i + 1]);
                     swapped = true;
                 }

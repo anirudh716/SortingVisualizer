@@ -10,7 +10,7 @@ function selectionSortVisualization(){
             }
             bars[i].style.background = "red";
             bars[minIndex].style.background = "blue";
-            await sleep(100);
+            await sleep(50);
             swap(bars[i], bars[minIndex]);
             bars[i].style.background = '#e1ad01';
             bars[minIndex].style.background = '#e1ad01';

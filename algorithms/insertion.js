@@ -8,7 +8,7 @@ function insertionSortVisualization() {
           bars[j].style.background = "red";
           bars[j - 1].style.background = "red";
           if (parseInt(bars[j].style.height) < parseInt(bars[j - 1].style.height)) {
-            await sleep(100);
+            await sleep(50);
             swap(bars[j], bars[j - 1]);
           } 
             bars[j].style.background = "#e1ad01";
