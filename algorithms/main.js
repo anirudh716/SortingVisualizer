@@ -1,10 +1,19 @@
 var barsHeight = [];
 var height = 4;
-var numberOfBars = 60;
+// var numberOfBars = 60;
+function setNumberOfBars() {
+    var screenWidth = window.innerWidth;
 
+    if (screenWidth < 600) {
+        return 20;  
+    } else {
+        return 60; 
+    }
+}
 
 function createBars(){
     var barsContainer = document.getElementById('bars-container');
+    var numberOfBars = setNumberOfBars();
     barsContainer.innerHTML = '';
 
     for(var i=1; i<numberOfBars; i++){

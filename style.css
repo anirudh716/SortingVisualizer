@@ -78,3 +78,18 @@ label{
     background-color: #e1ad01;
     margin: 2px;
 }
+
+@media only screen and (max-width: 600px) {
+    #heading{
+        font-size: 20px;
+    }
+    .btn{
+        height: 40px;
+        width: 40px;
+        font-size: 10px;
+    }
+    #algos{
+        width: 8em;
+        font-size: 15px;
+    }
+}
